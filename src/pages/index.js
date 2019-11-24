@@ -2,8 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Drawer from "../components/drawer"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+import Button from "@material-ui/core/Button"
 
 class IndexPage extends React.Component {
   state = { loading: false, msg: null }
@@ -19,8 +22,9 @@ class IndexPage extends React.Component {
   render() {
     const { loading, msg } = this.state
     return (
-      <Layout>
+      <Drawer>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+
         <div
           style={{
             display: "flex",
@@ -32,6 +36,10 @@ class IndexPage extends React.Component {
               Welcome to your new Gatsby + Netlify Functions + Netlify Identity
               site
             </p>
+            <Button variant="contained" color="primary">
+              Hello World
+            </Button>
+
             <ul>
               <li>
                 This site has statically generated marketing pages like this one
@@ -104,7 +112,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-      </Layout>
+      </Drawer>
     )
   }
 }

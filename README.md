@@ -1,5 +1,7 @@
 ## Make Authenticated, Serverless, Dynamic Clientside JAMstack apps with Gatsby + Netlify Dev (Functions + Identity)!
 
+## troubleshoot
+
 <marquee>
   <a href="https://app.netlify.com/sites/jamstack-hackathon-starter/deploys?utm_source=github&utm_medium=swyx-hackathon-starter&utm_campaign=devex">
 <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/7be76523-4643-4ce9-a6fd-a103463b62f3/deploy-status?utm_source=github&utm_medium=swyx-hackathon-starter&utm_campaign=devex" />
@@ -22,11 +24,9 @@ Features:
 
 [![walkthru](https://img.youtube.com/vi/bueXJInQt2c/1.jpg)](https://www.youtube.com/watch?v=bueXJInQt2c)
 
-
 ## Make this yourself
 
-You may not need this starter repo! Learn how to add Netlify Identity and Functions to your own existing Gatsby project. 
-
+You may not need this starter repo! Learn how to add Netlify Identity and Functions to your own existing Gatsby project.
 
 - [May 2019 livestream](https://www.youtube.com/watch?v=vrSoLMmQ46k&feature=youtu.be) Note: this doesn't include Netlify Dev.
 - Check our post on the Gatsby blog: [Turning the Static Dynamic: Gatsby + Netlify Functions + Netlify Identity](https://www.gatsbyjs.org/blog/2018-12-17-turning-the-static-dynamic/)

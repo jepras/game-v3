@@ -1,5 +1,5 @@
 // TODO: dear user, please change this to your own instance
-const netlifyInstance = "https://jamstack-hackathon-starter.netlify.com"
+const netlifyInstance = "https://determined-goldstine-d2e4f6.netlify.com"
 if (netlifyInstance === "https://jamstack-hackathon-starter.netlify.com") {
   console.warn(`
 
@@ -25,6 +25,7 @@ module.exports = {
   },
 
   plugins: [
+    // comes with starter
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-create-client-paths`,
@@ -60,5 +61,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // own added
+    `gatsby-plugin-material-ui`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "RMAPI",
+        fieldName: "rickAndMorty",
+        url: "https://rickandmortyapi-gql.now.sh/",
+      },
+    },
   ],
 }
